@@ -11,5 +11,7 @@ end
 def print_first_directors_movie_titles
   nds = directors_database
   first_director = nds[0][:movies]
-  first_director
+  first_director.each do |movie|
+    puts movie.title
+  end
 end
